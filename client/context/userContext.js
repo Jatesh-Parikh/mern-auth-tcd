@@ -46,7 +46,7 @@ export const UserContextProvider = ({ children }) => {
         password: "",
       });
 
-      router.push("/");
+      router.push("/login");
     } catch (error) {
       console.log("Error registering user", error);
       toast.error(error.response.data.message);
