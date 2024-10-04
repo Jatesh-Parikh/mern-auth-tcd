@@ -22,7 +22,7 @@ const sendEmail = async (
     service: "Outlook365",
     host: "smtp.office365.com",
     port: 587,
-    secure: false,
+    secure: true,
     auth: {
       user: process.env.USER_EMAIL,
       pass: process.env.EMAIL_PASS,
